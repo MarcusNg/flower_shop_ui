@@ -50,8 +50,9 @@ class Categories extends StatelessWidget {
         Container(
           height: 80.0,
           child: ListView.builder(
+            physics: AlwaysScrollableScrollPhysics(),
             scrollDirection: Axis.horizontal,
-            itemCount: 4,
+            itemCount: 5,
             itemBuilder: (BuildContext context, int index) {
               if (index == 0) {
                 return SizedBox(width: 8.0);
@@ -72,7 +73,7 @@ class Categories extends StatelessWidget {
                       begin: Alignment.centerLeft,
                       end: Alignment.centerRight,
                       stops: [0.1, 0.5, 0.7, 0.9],
-                      colors: gradients[index],
+                      colors: gradients[index - 1],
                     ),
                     borderRadius: BorderRadius.circular(15.0),
                   ),

@@ -24,6 +24,7 @@ class PopularFlowers extends StatelessWidget {
         Container(
           height: 120.0,
           child: ListView.builder(
+            physics: AlwaysScrollableScrollPhysics(),
             scrollDirection: Axis.horizontal,
             itemCount: 5,
             itemBuilder: (BuildContext context, int index) {
