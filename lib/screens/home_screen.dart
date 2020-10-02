@@ -16,8 +16,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+
         title: Text(
           'THE FLOWER SHOP',
+
           style: TextStyle(
             color: Colors.black,
             fontSize: 26.0,
@@ -26,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         elevation: 0.0,
-        centerTitle: false,
+        centerTitle: true,
         backgroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
