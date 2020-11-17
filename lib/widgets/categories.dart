@@ -31,7 +31,8 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Padding(
           padding: EdgeInsets.symmetric(
@@ -49,6 +50,7 @@ class Categories extends StatelessWidget {
         ),
         Container(
           height: 80.0,
+          width: 800.0,
           child: ListView.builder(
             physics: AlwaysScrollableScrollPhysics(),
             scrollDirection: Axis.horizontal,

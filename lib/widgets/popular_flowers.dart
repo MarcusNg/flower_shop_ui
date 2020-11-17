@@ -5,7 +5,9 @@ class PopularFlowers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Padding(
           padding: EdgeInsets.symmetric(
@@ -22,6 +24,7 @@ class PopularFlowers extends StatelessWidget {
           ),
         ),
         Container(
+          width: 800.0,
           height: 120.0,
           child: ListView.builder(
             physics: AlwaysScrollableScrollPhysics(),
